@@ -1,0 +1,54 @@
+{
+  "name": "@stackzero-labs/mcp",
+  "version": "0.0.1",
+  "author": "@stackzero-labs",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "claude",
+    "server"
+  ],
+  "license": "MIT",
+  "description": "MCP (Model Context Protocol) server for stackzero-labs/ui",
+  "homepage": "https://ui.stackzero.co",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stackzero-labs/mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stackzero-labs/mcp/issues"
+  },
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "inspect": "mcp-inspector",
+    "prepublishOnly": "pnpm run build",
+    "prepare": "husky"
+  },
+  "type": "module",
+  "main": "./dist/server.js",
+  "module": "./dist/server.js",
+  "types": "./dist/server.d.ts",
+  "bin": {
+    "mcp": "./dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.3",
+    "zod": "^3.25.64"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@modelcontextprotocol/inspector": "^0.14.2",
+    "@types/node": "^22.14.1",
+    "husky": "^9.1.7",
+    "shx": "^0.4.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

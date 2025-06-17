@@ -1,6 +1,27 @@
-# @stackzero-labs/mcp
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/stackzero-labs/ui">
+    <img src="public/logo.svg" alt="Logo" width="80" height="80">
+  </a>
 
-MCP (Model Context Protocol) server for stackzero-labs/ui components.
+  <h3 align="center">@stackzero-labs/mcp</h3>
+
+  <p align="center">
+    Official MCP (Model Context Protocol) server for stackzero-labs/ui.
+    <br />
+    <a href="https://ui.stackzero.co"><strong>Official Docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://ui.stackzero.co/get-started">Get started</a>
+    &middot;
+    <a href="https://github.com/stackzero-labs/mcp/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    &middot;
+    <a href="https://github.com/stackzero-labs/mcp/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
+
+## Overview
 
 This package allows you to run a model context server for stackzero-labs/ui components, enabling you to use the MCP protocol with your applications.
 

@@ -1,6 +1,6 @@
 {
   "name": "@stackzero-labs/mcp",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "@stackzero-labs",
   "keywords": [
     "mcp",
@@ -20,7 +20,8 @@
     "url": "https://github.com/stackzero-labs/mcp/issues"
   },
   "scripts": {
-    "build": "tsc && shx chmod +x dist/*.js",
+    "build": "tsup src/server.ts --format esm,cjs --dts --out-dir dist",
+    "build:old": "tsc && shx chmod +x dist/*.js",
     "start": "node dist/server.js",
     "dev": "tsx watch src/server.ts",
     "inspect": "mcp-inspector",
@@ -48,6 +49,7 @@
     "@types/node": "^22.14.1",
     "husky": "^9.1.7",
     "shx": "^0.4.0",
+    "tsup": "^8.5.0",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }

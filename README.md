@@ -2,6 +2,12 @@
 
 MCP (Model Context Protocol) server for stackzero-labs/ui components.
 
+This package allows you to run a model context server for stackzero-labs/ui components, enabling you to use the MCP protocol with your applications.
+
+## 1-click install in Cursor
+
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=%40stackzero-labs%2Fmcp&config=eyJjb21tYW5kIjoibnB4IC15IEBzdGFja3plcm8tbGFicy9tY3BAbGF0ZXN0In0%3D)
+
 ## Installation
 
 ```bash
@@ -19,6 +25,21 @@ npx @stackzero-labs/mcp
 ### In Claude Desktop
 
 Add to your Claude Desktop configuration:
+
+```json
+{
+  "mcpServers": {
+    "@stackzero-labs/mcp": {
+      "command": "npx",
+      "args": ["-y", "@stackzero-labs/mcp@latest"]
+    }
+  }
+}
+```
+
+### In Cursor (manual setup)
+
+Go to Cursor settings, select `MCP`. Add to your Cursor configuration:
 
 ```json
 {
@@ -49,4 +70,4 @@ pnpm inspect
 
 ## License
 
-MIT
+See [LICENSE](LICENSE) for details.

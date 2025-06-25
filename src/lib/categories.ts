@@ -18,6 +18,7 @@ export const componentCategories = {
     "variant-selector-images",
     "variant-selector-multiple",
   ],
+  Inputs: ["phone-number-input-basic"],
 };
 
 export const blocksCategories = {

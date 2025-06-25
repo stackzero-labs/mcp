@@ -24,7 +24,7 @@
     "build:old": "tsc && shx chmod +x dist/*.js",
     "start": "node dist/server.js",
     "dev": "tsx watch src/server.ts",
-    "inspect": "mcp-inspector",
+    "inspect": "mcp-inspector node dist/server.js",
     "prepublishOnly": "pnpm run build",
     "prepare": "husky"
   },

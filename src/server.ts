@@ -17,14 +17,14 @@ import { blocksCategories, componentCategories } from "./lib/categories.js";
 
 // Initialize the MCP Server
 const server = new McpServer({
-  name: "commerce-ui MCP",
-  version: "0.0.1",
+  name: "@stackzero-labs/mcp",
+  version: "0.2.0",
 });
 
 // Register the main tool for getting all components
 server.tool(
   "getUIComponents",
-  "Provides a comprehensive list of all commerce-ui components.",
+  "Provides a comprehensive list of all stackzero-labs/ui components.",
   {},
   async () => {
     try {
@@ -43,7 +43,7 @@ server.tool(
         content: [
           {
             type: "text",
-            text: "Failed to fetch commerce-UI components",
+            text: "Failed to fetch stackzero-labs/ui components",
           },
         ],
         isError: true,
@@ -55,7 +55,7 @@ server.tool(
 // Register the main tool for getting all blocks
 server.tool(
   "getUIBlocks",
-  "Provides a comprehensive list of all commerce-ui blocks.",
+  "Provides a comprehensive list of all stackzero-labs/ui blocks.",
   {},
   async () => {
     try {
@@ -73,7 +73,7 @@ server.tool(
         content: [
           {
             type: "text",
-            text: "Failed to fetch commerce-UI blocks",
+            text: "Failed to fetch stackzero-labs/ui blocks",
           },
         ],
       };

@@ -18,10 +18,11 @@ export const componentCategories = {
     "variant-selector-images",
     "variant-selector-multiple",
   ],
-  Inputs: ["phone-number-input-basic"],
+  Inputs: ["input-icon", "phone-number-input-basic"],
 };
 
 export const blocksCategories = {
+  Addresses: ["address-01-block", "address-02-block"],
   Banners: [
     "banner-01-block",
     "banner-02-block",
